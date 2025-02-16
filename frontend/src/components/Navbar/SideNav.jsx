@@ -12,7 +12,7 @@ import {
   CircleUserRound as Avatar,
 } from "lucide-react";
 
-export default function SideNav() {
+export const SideNav = () => {
   const menuItems = [
     { icon: Home, label: "Home" },
     { icon: Search, label: "Search" },

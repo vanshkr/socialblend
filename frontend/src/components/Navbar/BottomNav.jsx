@@ -11,7 +11,7 @@ import {
   CircleUserRound as Avatar,
 } from "lucide-react";
 
-const BottomNav = ()=> {
+export const BottomNav = () => {
   const menuItems = [
     { icon: Home, label: "Home" },
     { icon: Compass, label: "Explore" },
@@ -23,16 +23,15 @@ const BottomNav = ()=> {
 
   return (
     
-      <div className="flex justify-around items-center p-2">
-        {menuItems.map((item, index) => (
-          <button
-            key={index}
-            className="flex flex-col items-center p-2 hover:bg-gray-100 rounded-lg"
-          >
-            <item.icon className="h-6 w-6" />
-          </button>
-        ))}
-      </div>
+    <div className="flex justify-around items-center p-2">
+      {menuItems.map((item, index) => (
+        <button
+          key={index}
+          className="flex flex-col items-center p-2 hover:bg-gray-100 rounded-lg"
+        >
+          <item.icon className="h-6 w-6" />
+        </button>
+      ))}
+    </div>
   );
-}
-export default BottomNav;
+};

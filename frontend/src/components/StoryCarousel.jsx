@@ -1,9 +1,7 @@
 import React from 'react'
 
-const StoryCarousel = () => {
+export const StoryCarousel = () => {
   return (
     <div>StoryCarousel</div>
   )
-}
-
-export default StoryCarousel;
+};
