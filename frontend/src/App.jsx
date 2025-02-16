@@ -1,11 +1,35 @@
-import { useState } from 'react'
+import { useState } from "react";
+import SideNav from "./components/Navbar/SideNav";
+import Feed from "./components/Feed";
+import BottomNav from "./components/Navbar/BottomNav";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-      <div className="text-3xl text-amber-600 font-bold underline">hello world</div>
+    <div className="w-screen h-screen flex">
+      {/* SideNav for desktop */}
+      <aside className="hidden md:block xl:w-[20%] border-r border-gray-100">
+        <SideNav />
+      </aside>
+
+      {/* Main content area */}
+      <main className="flex-1 flex flex-col xl:flex-row">
+        {/* Feed section */}
+        <section className="w-full xl:w-[65%] px-4">
+          <Feed />
+        </section>
+
+        {/* SideNav for larger screens (hidden on smaller screens) */}
+        <aside className="hidden xl:block w-[35%] border-l border-gray-100">
+          <SideNav />
+        </aside>
+      </main>
+
+      {/* Bottom navigation for mobile */}
+      <nav className="fixed bottom-0 left-0 right-0 border-t-2 border-gray-100 block md:hidden">
+        <BottomNav />
+      </nav>
+    </div>
   );
 }
 
-export default App
+export default App;
