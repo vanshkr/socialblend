@@ -2,7 +2,7 @@ import React from 'react'
 import { Feed, SideNav, BottomNav } from '../components'
 export const Home = () => {
   return (
-    <div className="flex">
+    <div className="h-full flex">
       {/* SideNav for desktop */}
       <aside className="hidden md:block xl:w-[20%] border-r border-gray-100">
         <SideNav />
