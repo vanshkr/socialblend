@@ -3,31 +3,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-  const CustomPrevArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <div
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-black/50 rounded-full p-1 hover:bg-black/70"
-        onClick={onClick}
-      >
-        <ChevronLeft className="text-white w-4 h-4" />
-      </div>
-    );
-  };
+const CustomPrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div
+      className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-black/50 rounded-full p-1 hover:bg-black/70"
+      onClick={onClick}
+    >
+      <ChevronLeft className="text-white w-4 h-4" />
+    </div>
+  );
+};
 
-  const CustomNextArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <div
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-black/50 rounded-full p-1 hover:bg-black/70"
-        onClick={onClick}
-      >
-        <ChevronRight className="text-white w-4 h-4" />
-      </div>
-    );
-  };
+const CustomNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div
+      className="absolute right-5 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-black/50 rounded-full p-1 hover:bg-black/70"
+      onClick={onClick}
+    >
+      <ChevronRight className="text-white w-4 h-4" />
+    </div>
+  );
+};
 export const StoryCarousel = ({ stories }) => {
-
   const settings = {
     dots: false,
     infinite: false,

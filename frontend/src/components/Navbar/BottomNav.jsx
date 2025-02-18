@@ -3,10 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { bottomMenuItems } from "../../assets/constants";
 
 export const BottomNav = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
-    
     <div className="flex justify-around items-center px-2">
       {bottomMenuItems.map((item, index) => (
         <button

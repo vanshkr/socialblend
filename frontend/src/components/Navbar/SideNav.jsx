@@ -9,7 +9,10 @@ export const SideNav = () => {
   return (
     <div className="h-full w-full bg-white p-4 flex flex-col font-serif flex-shrink">
       <header className="mb-6">
-        <h1 className="text-2xl font-semibold font-[cursive] hidden xl:block " onClick={() => navigate("/")}>
+        <h1
+          className="text-2xl font-semibold font-[cursive] hidden xl:block "
+          onClick={() => navigate("/")}
+        >
           SocialBlend
         </h1>
         <Logo className=" block xl:hidden " />
@@ -36,4 +39,4 @@ export const SideNav = () => {
       </nav>
     </div>
   );
-}
+};
