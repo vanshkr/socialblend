@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/Logo";
 
-export const Signup=()=> {
+export const Signup = () => {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [username, setUsername] = useState("");
@@ -104,4 +104,4 @@ export const Signup=()=> {
       </div>
     </div>
   );
-}
+};
