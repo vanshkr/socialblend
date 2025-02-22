@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./hooks/AuthContext";
-import { Home, Login, Signup } from "./pages";
+import { Explore, Home, Login, Reels, Signup } from "./pages";
 import { PrivateRoute, PublicRoute } from "./routes";
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
             {/* Private Routes */}
             <Route element={<PrivateRoute />}>
               <Route path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+              <Route path="/reels" element={<Reels />} />
             </Route>
 
             {/* Fallback Route */}
