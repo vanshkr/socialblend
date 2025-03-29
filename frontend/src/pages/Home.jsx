@@ -12,13 +12,13 @@ export const Home = () => {
       {/* Main content area */}
       <main className=" w-full xl:w-[80%] flex flex-col xl:flex-row">
         {/* Feed section */}
-        <section className="w-full xl:w-[65%] border-2 border-amber-700">
+        <section className="overflow-y-auto feed-scrollbar w-full xl:w-[70%]">
           <Feed />
         </section>
 
         {/* SideNav for larger screens (hidden on smaller screens) */}
-        <aside className="hidden xl:block xl:w-[35%] border-l border-gray-100">
-          <SideNav />
+        <aside className="hidden xl:block xl:w-[30%] border-l border-gray-100">
+          <p>Suggestions Section (Coming Soon)</p>
         </aside>
       </main>
 

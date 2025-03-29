@@ -1,2 +1,21 @@
 @import "tailwindcss";
 
+/* Custom scrollbar for Feed section */
+.feed-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Vertical scrollbar width */
+  height: 60px; /* Horizontal scrollbar height */
+}
+
+.feed-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* No background */
+}
+
+.feed-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #bbb; /* Light gray scrollbar */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.feed-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Slightly darker on hover */
+}
+
